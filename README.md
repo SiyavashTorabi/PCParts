@@ -8,3 +8,10 @@ https://lucid.app/lucidchart/4c8b90e2-fc17-44c8-a746-0e7783ebdd91/edit?beaconFlo
 
 figma:
 https://www.figma.com/file/XOK1G1BL6cXdnjk6OinwGW/pcpArts?node-id=3%3A3
+ 
+ 
+ mvp: 
+ a fully functional backend and frontend that displays my data on screen as products and the ability to add edit or delete products.
+ 
+pmvp:
+search bar, hover over effect to see details of product cards, userauth, 
