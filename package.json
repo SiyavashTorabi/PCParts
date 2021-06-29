@@ -1,0 +1,32 @@
+{
+  "name": "PCParts",
+  "version": "1.0.0",
+  "description": "## Overview:  PCParts is an app where a user can check price and the details of pc part with the ability to add or edit exitng data on app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "banana": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiyavashTorabi/PCParts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiyavashTorabi/PCParts/issues"
+  },
+  "homepage": "https://github.com/SiyavashTorabi/PCParts#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "type": "module"
+}
