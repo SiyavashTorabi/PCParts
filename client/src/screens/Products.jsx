@@ -20,7 +20,8 @@ export default function Products() {
 //// if the data is stored inside the products verible then we can map through it 
   //// and for each item we are rendering Product component 
   return (
-    <div className='products'>///
+    
+    <div className='products'>
         {products.map((product, index) => {
           return (
             <Product
@@ -32,6 +33,6 @@ export default function Products() {
             />
           )
         })}
-      </div> ///
+      </div> 
   )
 }

@@ -5,16 +5,17 @@ import { NavLink } from 'react-router-dom'
 
 const alwaysOptions = (
     <>
-        <NavLink className="link" to="/products">Products</NavLink>
+        <NavLink className="link" to="/products">PC Parts</NavLink>
     </>
 )
 const Nav = ({ user }) => {
         return (
             <nav>
-                <div className="nav">
-                    <NavLink className="logo" to="/">ProductsApp</NavLink>
+            <div className="nav">
+            <NavLink className="link" to="/add-product">Add PC Part </NavLink>
+                    <NavLink className="logo" to="/">Home</NavLink>
                     <div className="links">
-                        {user && <div className="link welcome">Welcome, {user.username}</div>}
+                       
                         {alwaysOptions}
 
                     </div>
