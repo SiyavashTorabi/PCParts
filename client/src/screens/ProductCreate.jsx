@@ -15,10 +15,10 @@ const ProductCreate = (props) => {
   const [isCreated, setCreated] = useState(false)
 
   const handleChange = (event) => {
-    const { title, value } = event.target
+    const { name, value } = event.target
     setProduct({
       ...product,
-      [title]: value,
+      [name]: value,
     })
   }
 
@@ -35,10 +35,10 @@ const ProductCreate = (props) => {
     
       <form className='create-form' onSubmit={handleSubmit}>
         <input
-          className='input-name'
-          placeholder='Name'
+          className='input-title'
+          placeholder='title'
           value={product.title}
-          name='name'
+          name='title'
           required
           autoFocus
           onChange={handleChange}
