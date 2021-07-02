@@ -10,7 +10,7 @@ const insertData = async () => {
     {
       title: 'RGB 120 RAM',
       imgURL:
-        'https://g9p9r4s8.rocketcdn.me/wp-content/uploads/2020/12/Corsair-RGB-Ram-1024x525.jpg',
+        'https://images-na.ssl-images-amazon.com/images/I/61GpY38PAWL._AC_SY450_.jpg',
       description:
         'DOMINATOR® PLATINUM RGB 16GB (2 x 8GB) DDR4 DRAM 3000MHz C15 Memory Kit',
       price: '145'
