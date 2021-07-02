@@ -17,22 +17,26 @@ export default function Products() {
   /// make the req inside the useEffect (import useEffect)
   ///make sure all data are returning
   /// store data into stately verible called products (import useState)
-//// if the data is stored inside the products verible then we can map through it 
+  //// if the data is stored inside the products verible then we can map through it 
   //// and for each item we are rendering Product component 
   return (
-    
-    <div className='products'>
-        {products.map((product, index) => {
-          return (
-            <Product
+
+    <div className="grid grid-cols-3 gap-2 place-items-center p-30 m-30 h-48 justify-items-center ">
+      {products.map((product, index) => {
+        return (
+          <div key={index}>
+
+
+            <Product 
               _id={product._id}
-              name={product.title}
               imgURL={product.imgURL}
               price={product.price}
+              title={product.title}
               key={index}
             />
-          )
-        })}
-      </div> 
+          </div>
+        )
+      })}
+    </div>
   )
 }
