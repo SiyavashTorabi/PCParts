@@ -6,6 +6,7 @@ import ProductDetail from "./screens/ProductDetail.jsx"
 import ProductEdit from "./screens/ProductEdit.jsx"
 import ProductCreate from "./screens/ProductCreate";
 import Footer from "./components/Footer"
+import Home from "./screens/Home"
 function App() {
 
   return (
@@ -14,14 +15,7 @@ function App() {
 
       <Switch>
         <Route exact path="/">
-          <>
-            <div className="home">
-              <h1 className="text-4xl my-10 p-12 ...">
-                welcome to PCParts. check the price on pc parts and other details.
-                add pc parts and edit the existing ones from our archive </h1>
-            </div>
-            <Footer />
-          </>
+          <Home />
         </Route>
 
         <Route exact path="/products">
