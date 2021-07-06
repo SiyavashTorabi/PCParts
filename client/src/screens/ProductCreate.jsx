@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-
+import Footer from '../components/Footer'
 import { Redirect } from 'react-router-dom'
 import { createProduct } from '../services/products'
 
@@ -32,7 +32,7 @@ const ProductCreate = (props) => {
     return <Redirect to={`/products`} />
   }
   return (
-    
+    <>
       <form className='flex space-y-6 flex-col border-8 border-black-100 ml-72 mr-72 mb-52 bg-green-500 ' onSubmit={handleSubmit}>
         <input
           className='flex flex-col ml-40  mr-40   mt-5  bg-green-200'
@@ -73,7 +73,8 @@ const ProductCreate = (props) => {
           Submit
         </button>
       </form>
-   
+      <Footer />
+   </>
   )
 }
 

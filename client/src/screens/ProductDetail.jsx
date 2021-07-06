@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import './ProductDetail.css'
 import { getProduct, deleteProduct } from "../services/products";
 import { useParams, Link } from "react-router-dom";
+import Footer from '../components/Footer'
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
@@ -44,7 +45,7 @@ const ProductDetail = (props) => {
           </button>
         </div>
       </div>
-      
+      <Footer />
     </div>
   );
 };

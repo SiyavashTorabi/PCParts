@@ -20,8 +20,8 @@ export default function Products() {
   //// if the data is stored inside the products verible then we can map through it 
   //// and for each item we are rendering Product component 
   return (
-
-    <div className="grid grid-cols-3 gap-2 place-items-center p-30 m-30 h-48 justify-items-center ">
+<>
+    <div className="grid grid-cols-3 gap-2 place-items-center p-30 m-30 mb-42 h-48 justify-items-center ">
       {products.map((product, index) => {
         return (
           <div key={index}>
@@ -37,7 +37,8 @@ export default function Products() {
           </div>
         )
       })}
-<Footer />
     </div>
+<Footer />
+    </>
   )
 }
