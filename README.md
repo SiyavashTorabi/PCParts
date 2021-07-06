@@ -27,5 +27,9 @@ https://www.figma.com/file/XOK1G1BL6cXdnjk6OinwGW/pcpArts?node-id=3%3A3
  ## PMVP:
  search bar, hover over effect to see details of product cards, userauth, 
 
-## Deployed site:
-siyas-pcparts.netlify.app
+
+## Deployed sites:
+frontend react url: siyas-pcparts.netlify.app
+
+backend api url:  https://siyas-pcparts-app.herokuapp.com/
+
