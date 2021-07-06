@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import './ProductDetail.css'
 import { getProduct, deleteProduct } from "../services/products";
 import { useParams, Link } from "react-router-dom";
 
@@ -28,11 +28,11 @@ const ProductDetail = (props) => {
         src={product.imgURL}
         alt={product.title}
       />
-      <div className="detail">
-        <div className="title">{product.title}</div>
-        <div className="price text-6xl">{`$${product.price}`}</div>
-        <div className="description">{product.description}</div>
-        <div className="button-container">
+      <div className="detail bg-indigo-900 text-gray-50 ">
+        <div className="title m-2">{product.title}</div>
+        <div className="price text-6xl m-2 ">{`$${product.price}`}</div>
+        <div className="description m-2">{product.description}</div>
+        <div className="button-container m-2">
           <Link className="edit-button" to={`/products/${product._id}/edit`}>
             Edit
           </Link>
@@ -44,6 +44,7 @@ const ProductDetail = (props) => {
           </button>
         </div>
       </div>
+      
     </div>
   );
 };

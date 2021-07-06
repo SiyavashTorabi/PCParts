@@ -2,7 +2,7 @@ import React from 'react'
 import Product from "../components/Product"
 import { getProducts } from '../services/products'
 import { useState, useEffect } from 'react' ////
-
+import Footer from '../components/Footer'
 
 export default function Products() {
   const [products, setProducts] = useState([]) ///
@@ -37,6 +37,7 @@ export default function Products() {
           </div>
         )
       })}
+<Footer />
     </div>
   )
 }

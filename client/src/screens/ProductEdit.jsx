@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useParams, Redirect } from 'react-router-dom'
 
 import { getProduct, updateProduct } from '../services/products'
-
+import Footer from '../components/Footer'
 const ProductEdit = (props) => {
   const [product, setProduct] = useState({
     title: '',
@@ -24,10 +24,10 @@ const ProductEdit = (props) => {
   }, [id])
 
   const handleChange = (event) => {
-    const { title, value } = event.target
+    const { name, value } = event.target
     setProduct({
       ...product,
-      [title]: value,
+      [name]: value,
     })
   }
 
@@ -42,32 +42,29 @@ const ProductEdit = (props) => {
   }
 
   return (
-    
-      <div className='product-edit'>
-        <div className='image-container'>
-          <form onSubmit={handleSubmit}>
-            <input
-              className='edit-input-image-link'
+    <>
+      <div className='flex space-y-6 flex-col border-8 border-black-100 ml-72 mr-72 mb-52 bg-green-500 '>
+          
+        <form className=' form flex flex-col  border-black' onSubmit={handleSubmit}>
+          <input
+            className=' flex flex-col ml-40  mr-40  mt-5  bg-green-200'
+            placeholder='title'
+            value={product.title}
+            name='title'
+            required
+            autoFocus
+            onChange={handleChange}
+        />
+          <input
+              className='flex flex-col ml-40  mr-40 mt-5  bg-green-200'
               placeholder='Image Link'
               value={product.imgURL}
               name='imgURL'
               required
               onChange={handleChange}
             />
-          </form>
-        </div>
-        <form className='edit-form' onSubmit={handleSubmit}>
           <input
-            className='input-title'
-            placeholder='title'
-            value={product.title}
-            title='title'
-            required
-            autoFocus
-            onChange={handleChange}
-          />
-          <input
-            className='input-price'
+            className='flex flex-col ml-40  mr-40   mt-5  bg-green-200'
             placeholder='Price'
             value={product.price}
             name='price'
@@ -75,7 +72,7 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <textarea
-            className='textarea-description'
+            className=' flex flex-col ml-40  mr-40  mt-5  bg-green-200'
             rows={10}
             cols={78}
             placeholder='Description'
@@ -84,12 +81,13 @@ const ProductEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <button type='submit' className='save-button'>
+          <button type='submit' className='edit-button mb-5'>
             Save
           </button>
         </form>
       </div>
-  
+      <Footer />
+      </>
   )
 }
 
