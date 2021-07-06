@@ -23,6 +23,7 @@ const ProductDetail = (props) => {
   }
 
   return (
+    <>
     <div className="product-detail text-4xl">
       <img
         className="product-detail-image"
@@ -45,8 +46,9 @@ const ProductDetail = (props) => {
           </button>
         </div>
       </div>
+      </div>
       <Footer />
-    </div>
+      </>
   );
 };
 
