@@ -33,18 +33,18 @@ const ProductCreate = (props) => {
   }
   return (
     <>
-      <form className='flex space-y-6 flex-col border-8 border-black-100 ml-72 mr-72 mb-52 bg-green-500 ' onSubmit={handleSubmit}>
+      <form className='flex space-y-6 flex-col border-8 border-black-100 ml-72 mr-72 mb-52 bg-green-500' onSubmit={handleSubmit}>
         <input
-          className='flex flex-col ml-40  mr-40   mt-5  bg-green-200'
+          className='flex flex-col ml-40 mr-40 mt-5 bg-green-200'
           placeholder='title'
           value={product.title}
           name='title'
           required
           autoFocus
           onChange={handleChange}
-      />
-       <input
-          className='flex flex-col ml-40  mr-40   mt-5  bg-green-200'
+        />
+        <input
+          className='flex flex-col ml-40 mr-40 mt-5 bg-green-200'
           placeholder='Image Link'
           value={product.imgURL}
           name='imgURL'
@@ -52,7 +52,7 @@ const ProductCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className='flex flex-col ml-40  mr-40   mt-5  bg-green-200'
+          className='flex flex-col ml-40 mr-40 mt-5 bg-green-200'
           placeholder='Price'
           value={product.price}
           name='price'
@@ -60,7 +60,7 @@ const ProductCreate = (props) => {
           onChange={handleChange}
         />
         <textarea
-          className='flex flex-col ml-40  mr-40   mt-5  bg-green-200'
+          className='flex flex-col ml-40 mr-40 mt-5 bg-green-200'
           rows={10}
           placeholder='Description'
           value={product.description}
@@ -68,13 +68,12 @@ const ProductCreate = (props) => {
           required
           onChange={handleChange}
         />
-       
         <button type='submit' className='edit-button mb-5 '>
           Submit
         </button>
       </form>
       <Footer />
-   </>
+    </>
   )
 }
 
