@@ -30,7 +30,7 @@ const ProductDetail = (props) => {
         src={product.imgURL}
         alt={product.title}
       />
-      <div className="detail bg-indigo-900 text-gray-50 ">
+      <div className="detail bg-indigo-900 text-gray-50">
         <div className="title m-2">{product.title}</div>
         <div className="price text-6xl m-2 ">{`$${product.price}`}</div>
         <div className="description m-2">{product.description}</div>

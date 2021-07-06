@@ -5,7 +5,6 @@ import Products from "./screens/Products"
 import ProductDetail from "./screens/ProductDetail.jsx"
 import ProductEdit from "./screens/ProductEdit.jsx"
 import ProductCreate from "./screens/ProductCreate";
-import Footer from "./components/Footer"
 import Home from "./screens/Home"
 function App() {
 
