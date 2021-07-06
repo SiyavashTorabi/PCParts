@@ -42,3 +42,24 @@
   height: 300px;
   margin: 40px;
 }
+.icons {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+width: 30px;
+margin: 5px;
+height: 30px;
+padding: 5px;
+}
+.footer {
+  color:azure;
+  bottom: 0%;
+  display: flex;
+  position: sticky;
+  height: 40px;
+  margin-top: 12%;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(6, 98, 63);
+}

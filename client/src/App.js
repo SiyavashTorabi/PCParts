@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      
       <Switch>
         <Route exact path="/">
           <h1 className="text-4xl my-10 ...">welcome to PCParts. check the price on pc parts and other details.
@@ -29,6 +30,7 @@ function App() {
         <Route path="/add-product">
           <ProductCreate  /> 
         </Route>
+        
       </Switch>
     </div>
   );
