@@ -1,13 +1,21 @@
 .product-detail {
   display: flex;
-  padding: 100px;
-  padding-top: 80px;
+  justify-content: center;
+  height: 700px;
+  padding-bottom: 50px;
+  
 }
 
 .detail {
+  background-color: #1e6072;
   display: flex;
   flex-direction: column;
   line-height: 1.6;
+  font-size: 18px;
+  width: 380px;
+  height: 497px;
+  padding: 25px;
+  justify-content: space-evenly;
 }
 
 .name {
@@ -21,8 +29,8 @@
 }
 
 .description {
-  padding: 10px;
-  letter-spacing: .9px;
+  letter-spacing: 0.9px;
+
 }
 
 .product-detail-image {
@@ -32,43 +40,25 @@
 
 .button-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+
+
 }
 
-.edit-button {
-  font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  height: 40px;
-  width: 20%;
-  align-self: center;
-  margin-top: 40px;
-  background-color: black;
+.details-button {
+  display: flex;
+  width: 166px;
+  height: 83px;
   color: white;
-  border-radius: 5%;
-  box-shadow: 2px 2px 10px 2px #CECECE;
-  cursor: pointer;
-  padding: 2px;
-  border-radius: 14px;
-  
+  background-color: #2F4858;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 24px;
+
 }
 
-.delete-button {
-  font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  height: 40px;
-  width: 20%;
-  align-self: center;
-  margin-top: 40px;
-  background-color: black;
-  color: white;
-  border: none;
-  box-shadow: 2px 2px 10px 2px #CECECE;
-  cursor: pointer;
-  padding: 2px;
-  border-radius: 14px;
-}
+
 
 .edit-link {
   color: white;
@@ -76,36 +66,44 @@
 
 @media (max-width: 1024px) {
   .name {
-      font-size: 32px;
+    font-size: 32px;
   }
   .product-detail-image {
-      width: 500px;
-      margin-top: -100px;
-      padding: 10px;
+    width: 500px;
+    margin-top: -100px;
+    padding: 10px;
   }
   .product-detail {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media (max-width: 800px) {
   .product-detail-image {
-      width: 300px;
-      margin: 15px;
-      padding: 10px;
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
   }
   .product-detail {
-      padding: 0px;
-      padding-top: 120px;
+    padding: 0px;
+    padding-top: 120px;
+    
   }
   .button-container {
     display: block;
-      padding: 20px;
-      padding-bottom: 80px;
-      align-items: center;
-      justify-content: center;
+    padding: 20px;
+    padding-bottom: 80px;
+    align-items: center;
+    justify-content: center;
   }
 }
+.details-button-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  }
