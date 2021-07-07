@@ -26,7 +26,7 @@ const ProductCreate = (props) => {
     event.preventDefault();
     let newProduct = product
     if (!product.imgURL) {
-       newProduct={
+        newProduct={
         ...newProduct,
         imgURL:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png",
