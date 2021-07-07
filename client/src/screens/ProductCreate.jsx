@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./ProductCreate.css"
 import Footer from "../components/Footer";
 import { Redirect } from "react-router-dom";
 import { createProduct } from "../services/products";
@@ -42,12 +42,12 @@ const ProductCreate = (props) => {
   return (
     <>
       <form
-        className="flex space-y-6 flex-col border-8 border-black-100 ml-72 mr-72 mb-52 bg-green-500"
+        className="flex space-y-6 flex-col justify-center items-center border-8 border-black-100 mb-52 bg-green-500"
         onSubmit={handleSubmit}
       >
         <input
-          className="flex flex-col ml-40 mr-40 mt-5 bg-green-200"
-          placeholder="title"
+          className="mt-5 bg-green-200"
+          placeholder="Title"
           value={product.title}
           name="title"
           required
@@ -55,14 +55,14 @@ const ProductCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className="flex flex-col ml-40 mr-40 mt-5 bg-green-200"
+          className="mt-5 bg-green-200"
           placeholder="Image Link"
           value={product.imgURL}
           name="imgURL"
           onChange={handleChange}
         />
         <input
-          className="flex flex-col ml-40 mr-40 mt-5 bg-green-200"
+          className="mt-5 bg-green-200"
           placeholder="Price"
           value={product.price}
           name="price"
@@ -70,7 +70,7 @@ const ProductCreate = (props) => {
           onChange={handleChange}
         />
         <textarea
-          className="flex flex-col ml-40 mr-40 mt-5 bg-green-200"
+          className="mt-5 bg-green-200"
           rows={10}
           placeholder="Description"
           value={product.description}
@@ -78,8 +78,8 @@ const ProductCreate = (props) => {
           required
           onChange={handleChange}
         />
-        <button type="submit" className="edit-button mb-5 ">
-          Submit
+        <button type="submit" className="create-button">
+          Add PC Part
         </button>
       </form>
       <Footer />

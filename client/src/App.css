@@ -41,7 +41,7 @@ place-items: center;
 }
 .product {
   position: relative;
-  
+  border: solid 5px #1E6072;
 }
 .product:hover .product-overlay{
 
