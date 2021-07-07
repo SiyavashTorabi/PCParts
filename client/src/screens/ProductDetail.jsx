@@ -3,12 +3,14 @@ import "./ProductDetail.css";
 import { getProduct, deleteProduct } from "../services/products";
 import { useParams, Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { useHistory } from "react-router-dom";
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
-  const { id } = useParams();
 
+  const history = useHistory();
+  const { id } = useParams();
   useEffect(() => {
     const fetchProduct = async () => {
       const product = await getProduct(id);
@@ -21,6 +23,12 @@ const ProductDetail = (props) => {
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
+
+  const handleDelete = async () => {
+    const res = await deleteProduct(id);
+    console.log(res);
+    history.push("/products");
+  };
 
   return (
     <>
@@ -37,12 +45,16 @@ const ProductDetail = (props) => {
             <div className="price text-sm">{`$${product.price}`}</div>
           </div>
           <div className="button-container">
-            <Link className="details-button" to={`/products/${product._id}/edit`}>
+            <Link
+              className="details-button"
+              to={`/products/${product._id}/edit`}
+            >
               Edit
             </Link>
             <button
               className="details-button"
               onClick={() => deleteProduct(product._id)}
+              onClick={handleDelete}
             >
               Delete
             </button>

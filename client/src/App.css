@@ -1,9 +1,7 @@
 .home {
   height: 50vh;
-
 }
 .product-img {
-
   width: 250px;
   height: 300px;
   margin: 40px;
@@ -18,12 +16,10 @@
   padding: 5px;
 }
 .footer {
-  color:azure;
+  color: azure;
   bottom: 0%;
   display: flex;
   width: 100%;
-  /* position: fixed; */
-  /* margin-top: 15px; */
   height: 40px;
   justify-content: flex-start;
   flex-direction: row;
@@ -36,15 +32,13 @@
   opacity: 0;
   position: absolute;
   inset: 0;
-display: grid;
-place-items: center;
+  display: grid;
+  place-items: center;
 }
 .product {
   position: relative;
-  border: solid 5px #1E6072;
+  border: solid 5px #1e6072;
 }
-.product:hover .product-overlay{
-
-opacity: .7;
-
+.product:hover .product-overlay {
+  opacity: 0.7;
 }
