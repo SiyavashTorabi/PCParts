@@ -30,3 +30,21 @@
   align-items: center;
   background-color: rgb(6, 98, 63);
 }
+.product-overlay {
+  background-color: rgb(22, 21, 21);
+  color: aliceblue;
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+display: grid;
+place-items: center;
+}
+.product {
+  position: relative;
+  
+}
+.product:hover .product-overlay{
+
+opacity: .7;
+
+}

@@ -21,7 +21,7 @@ export default function Products() {
   //// and for each item we are rendering Product component 
   return (
     <>
-      <div className="grid grid-cols-3 gap-2 place-items-center p-30 min-h-screen justify-items-center">
+      <div className=" grid grid-cols-3 gap-2 place-items-center p-30 min-h-screen justify-items-center">
         {products.map((product, index) => {
           return (
             <div key={index}>
