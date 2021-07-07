@@ -70,7 +70,7 @@ const ProductCreate = (props) => {
           onChange={handleChange}
         />
         <textarea
-          className="description mt-5 bg-green-200"
+          className="mt-5 bg-green-200"
           rows={10}
           placeholder="Description"
           value={product.description}
